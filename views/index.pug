@@ -1,0 +1,25 @@
+extends _layout.pug
+block content
+  include _header.pug
+
+  main.wrapper.wrapper--no-bottom
+    section#intro
+      p Request header parser is yet another small API built for #[a(href='https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice', target='_blank') freeCodeCamp]. The app attempts to discover the IP address, preferred languages and system infos of the user.
+
+    section#user-stories
+      h3 User Stories
+      p We only have one user story this time.
+      blockquote
+        ul.stories
+          li.stories__item <input class="stories__checkbox" type="checkbox" disabled> I can get the IP address, preferred languages (from header <code>Accept-Language</code>) and system infos (from header <code>User-Agent</code>) for my device.
+
+    section#usage
+      h3 Example Usage
+
+    section#notes
+      p The example above uses the #[a(href='https://developer.mozilla.org/en/docs/Web/API/Fetch_API', target='_blank') fetch() API] to get the results via AJAX requests. It works in Chrome 42+, FireFox 39+, Safari 10+, Opera 29+, and Edge 14+ only; IE is not supported.
+      p The live preview won't work for you in Internet Explorer or really old browsers; however, you can still try the API directly.
+      p The GitHub repo is available here: #[a(href='https://github.com/zsoltime/fcc-api-request-header') Request Header Parser Microservice]
+
+  include _footer.pug
+  script(src='app.js')
