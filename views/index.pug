@@ -11,14 +11,21 @@ block content
       p We only have one user story this time.
       blockquote
         ul.stories
-          li.stories__item <input class="stories__checkbox" type="checkbox" disabled> I can get the IP address, preferred languages (from header <code>Accept-Language</code>) and system infos (from header <code>User-Agent</code>) for my device.
+          li.stories__item <input class="stories__checkbox" type="checkbox" checked disabled> I can get the IP address, preferred languages (from header <code>Accept-Language</code>) and system infos (from header <code>User-Agent</code>) for my device.
 
     section#usage
       h3 Example Usage
+      p You can use the <code>/api/whoami</code> endpoint or click that huge button below to fetch the data from the API.
+
+      .row
+        .col
+          button.btn.btn--large#test Click to Test the API
+        .col
+          textarea.form__field#output(placeholder='API response will be displayed here...', rows=5, disabled)
 
     section#notes
-      p The example above uses the #[a(href='https://developer.mozilla.org/en/docs/Web/API/Fetch_API', target='_blank') fetch() API] to get the results via AJAX requests. It works in Chrome 42+, FireFox 39+, Safari 10+, Opera 29+, and Edge 14+ only; IE is not supported.
-      p The live preview won't work for you in Internet Explorer or really old browsers; however, you can still try the API directly.
+      p The example above uses the #[a(href='https://developer.mozilla.org/en/docs/Web/API/Fetch_API', target='_blank') fetch() API] to get the results via AJAX requests. It works in all modern browsers (Chrome 42+, FireFox 39+, Safari 10+, Opera 29+, and Edge 14+ only); IE is not supported.
+      p The live preview won't work for you in Internet Explorer or really old browsers; however, you can still try the API by opening the <a href="api/whoami"><code>/api/whoami</code></a> endpoint directly.
       p The GitHub repo is available here: #[a(href='https://github.com/zsoltime/fcc-api-request-header') Request Header Parser Microservice]
 
   include _footer.pug
