@@ -6,7 +6,7 @@ This is my request header parser for [freeCodeCamp's second API project][fcc-lin
 
 It seems we're short on user stories, this is the only one this time:
 
-- [ ] I can get the IP address, preferred languages (from header `Accept-Language`) and system infos (from header `User-Agent`) for my device.
+- [x] I can get the IP address, preferred languages (from header `Accept-Language`) and system infos (from header `User-Agent`) for my device.
 
 ## Example Usage
 
